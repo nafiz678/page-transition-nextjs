@@ -3,8 +3,8 @@ import { ArrowRight } from "lucide-react"
 
 export default function page() {
   return (
-    <main>
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+    <section>
+      <div className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-8 gradient-text">About Me</h1>
           <div className="prose prose-lg max-w-none">
@@ -23,9 +23,9 @@ export default function page() {
             </p>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Values</h2>
           <p className="text-xl text-foreground/60">What drives us every day</p>
@@ -55,7 +55,7 @@ export default function page() {
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   )
 }

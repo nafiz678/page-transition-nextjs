@@ -1,35 +1,9 @@
 import { Star } from "lucide-react"
 
 export default function page() {
-  const projects = [
-    {
-      title: "Project Alpha",
-      description: "A sleek e-commerce platform with modern UI and seamless checkout experience.",
-      category: "E-commerce",
-    },
-    {
-      title: "Project Beta",
-      description: "A productivity-focused mobile app with intuitive interface and smart notifications.",
-      category: "Mobile App",
-    },
-  ]
-
-  const testimonials = [
-    {
-      name: "Sophia Martinez",
-      role: "Marketing Director",
-      feedback: "NaiqRy transformed our online presence! The design and functionality exceeded expectations.",
-    },
-    {
-      name: "James Lee",
-      role: "Startup Founder",
-      feedback: "Their attention to detail and creativity made our project a success. Highly recommended!",
-    },
-  ]
-
   return (
-    <main>
-      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section>
+      <div className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">Our Work</h1>
           <p className="text-xl text-foreground/70 leading-relaxed">
@@ -62,9 +36,9 @@ export default function page() {
             </div>
           ))}
         </div>
-      </section>
+      </div>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-primary/5 to-secondary/5">
+      <div className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-primary/5 to-secondary/5">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">What Our Clients Say</h2>
@@ -92,7 +66,32 @@ export default function page() {
             ))}
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   )
 }
+const projects = [
+  {
+    title: "Project Alpha",
+    description: "A sleek e-commerce platform with modern UI and seamless checkout experience.",
+    category: "E-commerce",
+  },
+  {
+    title: "Project Beta",
+    description: "A productivity-focused mobile app with intuitive interface and smart notifications.",
+    category: "Mobile App",
+  },
+]
+
+const testimonials = [
+  {
+    name: "Sophia Martinez",
+    role: "Marketing Director",
+    feedback: "NaiqRy transformed our online presence! The design and functionality exceeded expectations.",
+  },
+  {
+    name: "James Lee",
+    role: "Startup Founder",
+    feedback: "Their attention to detail and creativity made our project a success. Highly recommended!",
+  },
+]

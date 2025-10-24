@@ -1,11 +1,10 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { type ReactNode } from "react";
 
-export default function template({ children }: { children: ReactNode }) {
+export default function Template({ children }: { children: ReactNode }) {
     useGSAP(() => {
         const bannerOne = document.getElementById("banner-1");
         const bannerTwo = document.getElementById("banner-2");
@@ -31,7 +30,6 @@ export default function template({ children }: { children: ReactNode }) {
             });
         }
     }, []);
-
     return (
         <section>
             <div
@@ -54,7 +52,7 @@ export default function template({ children }: { children: ReactNode }) {
                 id="banner-5"
                 className="fixed left-[80%] top-0 z-50 min-h-screen w-1/5 bg-foreground"
             />
-            <main className="appear">
+            <main>
                 {children}
             </main>
         </section>

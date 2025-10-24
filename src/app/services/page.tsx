@@ -2,31 +2,18 @@ import Link from "next/link"
 import { ArrowRight, Code, Palette } from "lucide-react"
 
 export default function page() {
-  const services = [
-    {
-      icon: Palette,
-      title: "Web Design",
-      description: "Beautiful, modern designs that captivate and convert.",
-    },
-    {
-      icon: Code,
-      title: "Development",
-      description: "Robust, scalable solutions built with cutting-edge technology.",
-    },
-  ]
-
   return (
-    <main>
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+    <section>
+      <div className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">Our Services</h1>
           <p className="text-xl text-foreground/70 leading-relaxed">
             We offer comprehensive digital solutions tailored to your unique needs and goals.
           </p>
         </div>
-      </section>
+      </div>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon
@@ -58,7 +45,19 @@ export default function page() {
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   )
 }
+const services = [
+  {
+    icon: Palette,
+    title: "Web Design",
+    description: "Beautiful, modern designs that captivate and convert.",
+  },
+  {
+    icon: Code,
+    title: "Development",
+    description: "Robust, scalable solutions built with cutting-edge technology.",
+  },
+]

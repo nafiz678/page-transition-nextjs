@@ -1,26 +1,11 @@
-"use client"
-
 import Link from "next/link"
 import { ArrowRight, Zap, Smartphone } from "lucide-react"
 
 export default function Home() {
-  const features = [
-    {
-      icon: Zap,
-      title: "Lightning Fast",
-      description: "Optimized performance for seamless user experiences.",
-    },
-    {
-      icon: Smartphone,
-      title: "Fully Responsive",
-      description: "Beautiful on every device, every time.",
-    },
-  ]
-
   return (
     <main>
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center to-secondary/5 relative overflow-hidden">
+      <section className="py-20 flex items-center justify-center to-secondary/5 relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
           <div className="absolute top-40 right-10 w-72 h-72 bg-secondary/10 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
@@ -83,3 +68,16 @@ export default function Home() {
     </main>
   )
 }
+
+const features = [
+  {
+    icon: Zap,
+    title: "Lightning Fast",
+    description: "Optimized performance for seamless user experiences.",
+  },
+  {
+    icon: Smartphone,
+    title: "Fully Responsive",
+    description: "Beautiful on every device, every time.",
+  },
+]

@@ -26,25 +26,11 @@ body {
 }
 
 .appear{
-  animation: fadeIn linear 1s;
+  animation: fadeIn linear 1.3s;
 }
 
 @keyframes fadeIn {
   0% { opacity: 0; transform: translateY(-30px); }
   70% { opacity: 0; transform: translateY(-8px); }
   100% { opacity: 1; transform: translateY(0); }
-}
-
-.gone{
-  animation: fade-out;
-}
-
-@keyframes fade-out {
-  from{
-    opacity: 1;
-    color: red;
-  }
-  to{
-    opacity: 0;
-  }
 }
